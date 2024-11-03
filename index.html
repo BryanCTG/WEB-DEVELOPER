@@ -4,24 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/styles/style.css" as="style">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Design Web </title>
 </head>
 
 <body>
     <header>
-        <h1>Brayan Beltran Web Developer</h1>
+        <h1 class="title">Brayan Beltran <span>Web Developer</span></h1>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About us</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div class="nav-bg">
+        <nav class="navegation-pricipal contenedor">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
 
 
     <section>
-        <h2>Web Development</h2>
+        <h2 class="title">Web Development</h2>
         <p><svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round"
                 stroke-linejoin="round" width="32" height="32" stroke-width="1.25">
@@ -108,7 +116,7 @@
                     <label>Phone Number</label>
                     <input type="number" placeholder="Number">
 
-                    <label for="">Email</label>\
+                    <label for="">Email</label>
                     <input type="email" name="" id="" placeholder="Email">
 
                     <label for="">Message</label>
